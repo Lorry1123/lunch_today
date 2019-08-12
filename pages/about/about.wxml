@@ -1,0 +1,12 @@
+<!--pages/about/about.wxml-->
+<view>
+<text>
+版本：v0.0.1
+</text>
+<text>
+功能少如何解决：键盘给你自己来写
+</text>
+<text>
+长得丑如何解决：键盘给你自己来写
+</text>
+</view>
