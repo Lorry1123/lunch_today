@@ -1,6 +1,10 @@
 <!--pages/about/about.wxml-->
 <view>
 <text>
+美登午饭老黄历。
+被熊吐槽后移植到微信来
+</text>
+<text>
 版本：v0.0.1
 </text>
 <text>

@@ -14,10 +14,14 @@
     "list": [
       {
         "pagePath": "pages/index/index",
+        "iconPath": "static/icons/index_1.jpeg",
+        "selectedIconPath": "static/icons/index.jpeg",
         "text": "老黄历"
       },
       {
         "pagePath": "pages/about/about",
+        "iconPath": "static/icons/about_1.jpeg",
+        "selectedIconPath": "static/icons/about.jpeg",
         "text": "关于"
       }
     ]
