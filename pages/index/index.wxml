@@ -30,7 +30,9 @@
           </view>
         </view>
       </view>
-
     </view>
+  </view>
+  <view class="action">
+  <button bindtap="lucky">手气不错</button>
   </view>
 </view>

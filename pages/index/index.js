@@ -86,13 +86,19 @@ Page({
     return n;
   },
   restaurants_used: {},
-  genSuggestion: function(num) {
+  genSuggestion: function(num, random) {
     let index = 0;
     let ret = [];
     for (let i = 0; i < num; ++i) {
       let round = 0;
       do {
-        index = this.getRandom(this.getRandomBase(), round) % this.restaurants.length;
+        if (!!random) {
+          index = Math.floor(Math.random() * (this.restaurants.length));
+        }
+        else {
+          index = this.getRandom(this.getRandomBase(), round) % this.restaurants.length;
+        }
+        
         round ++;
       } while (index in this.restaurants_used);
       ret.push(this.restaurants[index]);
@@ -100,8 +106,17 @@ Page({
     }
     return ret;
   },
+  lucky: function() {
+    this.restaurants_used = {};
+    const goods = this.genSuggestion(2, true);
+    const bads = this.genSuggestion(2, true);
+    this.setData({
+      goods: goods,
+      bads: bads,
+    })
+  },
   onLoad: function () {
-    console.log('load');
+    this.restaurants_used = {};
     const goods = this.genSuggestion(2);
     const bads = this.genSuggestion(2);
     this.setData({
