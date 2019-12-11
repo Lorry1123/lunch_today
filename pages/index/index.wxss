@@ -49,3 +49,11 @@
 .action {
   margin-top: 10px;
 }
+
+.actionButton {
+  display: inline-block;
+}
+
+.actionButton + .actionButton {
+  margin-left: 8px;
+}

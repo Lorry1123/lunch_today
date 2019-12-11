@@ -33,6 +33,7 @@
     </view>
   </view>
   <view class="action">
-  <button bindtap="lucky">手气不错</button>
+    <button class="actionButton" bindtap="lucky">手气不错</button>
+    <button class="actionButton" bindtap="fetchData">重置</button>
   </view>
 </view>
